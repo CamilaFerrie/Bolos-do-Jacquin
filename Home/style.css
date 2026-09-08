@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 h1{
@@ -129,6 +130,7 @@ h1{
     align-items: center;
     position: relative;
     margin-top: 60px;
+    margin-bottom: 100px;
 }
 
 .home_subtitulo h2{
@@ -145,7 +147,7 @@ h1{
     font-size: 32px;
     position: absolute;
     bottom: -10px;
-
+    margin-bottom: 10px;
 }
 
 .home_subtitulo hr{
@@ -157,3 +159,58 @@ h1{
     border: none;
     height: 2px;
 }
+
+.img_bolos_e_festa{
+    background-image: url(../Img/pexels-jonathanborba-26774588\ 1.png);
+    width: 770px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px 20px;
+}
+
+.colecoes_exclusivas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.colecoes_exclusivas a{
+    color: #ffffff;
+}
+
+.img_bolos_e_festa span{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+}
+
+.img_bolos_e_festa h3{
+    font-size: 32px;
+ 
+}
+
+
+.img_colunas_categorias1{
+    font-family: Libre Caston Text, serif;
+}
+
+.img_colunas_categorias1{
+    background-image: url(../Img/Image\ \(1\).png);
+}
+
+.img_colunas_categorias2{
+    background-image: url(../Img/Image\ \(2\).png);
+}
+
+.img_colunas_categorias1,
+.img_colunas_categorias2{
+    width: 340px;
+    height: 282px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 10px;
+    font-size: 24px;
+}
+
+
