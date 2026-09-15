@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* -----------CABECALHO------------- */
+
+:root{
+    --corPrincipal: #FFF4F4;
+    --font-family: "Hanken Grotesk", sans-serif;
+    --corDourado: #C5A028;
+}
+
+.pagina_cadastro{
+    background-color: #FFF4F4;
+    height: 120px;    
+    display: flex;
+    align-items: center;
+}
+
+.container_cadastro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.pesquisa{
+    position: relative;
+}
+
+.pesquisa svg{
+    width: 20px;
+    fill: grey;
+    position: absolute
+}
+
+input{
+    padding-left: 25px;
+    background-color: transparent;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: solid 1px grey;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 20px;
+    
+}
+
+input:focus{
+    outline: none;
+}
+
+.pesquisa_inicio{
+  text-decoration: none;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: #cccccc;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pesquisa_inicio span{
+    position: absolute;
+    left: -5px;
+    top: 8px;
+    color: black;
+}
+
+.pesquisa_inicio hr{
+    margin-top: 7px;
+    width: 99px;
+    background-color: #C5A028;
+    border: none;
+    height: 1px;
+}
+
+
+/* -----------PÁGINA DE CADASTRO------------- */

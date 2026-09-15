@@ -22,10 +22,10 @@ h1{
     align-items: center;
 }
 
-    .home_container{
-        max-width: 1200px; /* Largura maximma 1200px */
-        width: 95%; /* Largura 95% */
-        margin: 0 auto;
+.home_container{    
+    max-width: 1200px; /* Largura maximma 1200px */
+    width: 95%; /* Largura 95% */
+    margin: 0 auto;
 }
 
 
@@ -50,7 +50,7 @@ h1{
 }
 
 .linha1{
-    color: #C5A028;z
+    color: #C5A028;z    
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase; /* transformar a aparencia do texto*/
@@ -89,7 +89,7 @@ h1{
 
 /* -----------PRODUTOS------------- */
 .home_produtos{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .link_produtos a{
@@ -213,4 +213,27 @@ h1{
     font-size: 24px;
 }
 
+.img_colunas_categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+footer div{
+    background-color: #FFF4F4;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+footer nav a{
+    color: #AAAAAA;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
