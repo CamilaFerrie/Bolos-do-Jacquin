@@ -48,7 +48,7 @@ h1{
     position: absolute
 }
 
-input{
+.pesquisa input{
     padding-left: 25px;
     background-color: transparent;
     padding-bottom: 5px;
@@ -150,10 +150,120 @@ input:focus{
     height: 2px;
 }
 
+/*------------FORMULÁRIO--------------*/
 
+form{
+    width: 100%;
+}
 
+.inputs_forms{
+    display: flex;
+    justify-content: space-around;
+}
 
+.lf_coluna{
+    display: flex;
+    flex-direction: column;
+}
 
+.lf_linha{
+    display: flex;
+}
+
+.input_img svg{
+    width: 24px;
+}
+
+.form_coluna1,
+.form_coluna2{
+    width: 414px;
+}
+
+.input_img span,
+form label{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    resize: none;
+}
+
+form label{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+    color: #444;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.inputs_forms input[type=text],
+.inputs_forms textarea{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: transparent;
+    border-style: initial;
+    border-bottom: solid 1px grey;
+    resize: none;
+    color: grey;
+}
+
+.span_imagem{
+    font-family: "Hanken Grotesk", sans-serif;
+    color: #444;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.inputs_forms input[type=file]{
+    display: none;
+}
+
+.linha_form{
+    margin-bottom: 20px;
+}
+
+.input_img label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    border: #444;
+    border: solid 1px #444;
+}
+
+.inputs_forms input[type=text]:focus,
+.inputs_forms textarea:focus{
+    outline: none;
+}
+
+.input_img label:hover{
+    cursor: pointer;
+}
+
+.input_cat input{
+    width: 314px;
+    margin-right: 20px;
+}
+
+.input_valor input{
+    margin-right: 20px;
+    width: 360px;
+}
+
+.input_cadastro{
+    margin: 100px auto 0;
+    display: block;
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 20px;
+
+}
 
 
 
