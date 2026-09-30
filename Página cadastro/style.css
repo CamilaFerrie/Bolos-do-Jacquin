@@ -19,6 +19,7 @@ h1{
     --corPrincipal: #FFF4F4;
     --font-family: "Hanken Grotesk", sans-serif;
     --corDourado: #C5A028;
+    --corsecundaria: #fdf8f8;
 }
 
 .pagina_cadastro{
@@ -28,6 +29,12 @@ h1{
     align-items: center;
 }
 
+.container{
+     width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .container_cadastro{
     display: flex;
     justify-content: space-between;
@@ -35,7 +42,6 @@ h1{
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .pesquisa{
@@ -158,12 +164,15 @@ form{
 
 .inputs_forms{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .lf_coluna{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .lf_linha{
@@ -171,12 +180,14 @@ form{
 }
 
 .input_img svg{
-    width: 24px;
+    max-width: 24px;
+    width: 100%;
 }
 
 .form_coluna1,
 .form_coluna2{
-    width: 414px;
+    max-width: 414px;
+    width: 45%;
 }
 
 .input_img span,
@@ -201,12 +212,19 @@ form label{
 .inputs_forms textarea{
     font-family: "Hanken Grotesk", sans-serif;
     font-size: 12px;
-    font-weight: 500;
     background-color: transparent;
     border-style: initial;
     border-bottom: solid 1px grey;
     resize: none;
     color: grey;
+}
+
+.linha_form2 textarea{
+    height: 40px;
+}
+
+.linha_form4 textarea{
+    height: 113px;
 }
 
 .span_imagem{
@@ -242,14 +260,22 @@ form label{
     cursor: pointer;
 }
 
+.input_cat{
+    width: 90%;
+}
+
 .input_cat input{
-    width: 314px;
+    max-width: 314px;
     margin-right: 20px;
+}
+
+.input_valor{
+    width: 90%;
 }
 
 .input_valor input{
     margin-right: 20px;
-    width: 360px;
+    max-width: 360px;
 }
 
 .input_cadastro{
@@ -259,19 +285,44 @@ form label{
     background-color: #000000;
     border: none;
     color: #fff;
-    font-weight: 500;
-    font-size: 20px;
-    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 16px 55px;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
 
+form input[type=checkbox]{
+    height: 25px;
 }
 
 
+/*-------------LISTA E PRODUTOS-----------*/
 
+.list_produtos{
+    background-color: var(--corsecundaria);
+}
 
+table{
+    width: 100%;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+}
 
+table svg{
+    width: 35px;
+}
 
+thead{
+    font-size: 12px;
+    font-weight: 600;
+    color: #444;
+}
 
-
+tbody{
+    color: #aaaaaa;
+    font-weight: 400;
+}
 
 
 
@@ -310,8 +361,28 @@ form label{
         margin-top: -50px;
     }
 
-    
 
+    /*------------------FORMULÁRIO---------------*/
+
+    .inputs_forms {
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .form_coluna1,
+    .form_coluna2{
+        width: 95%;
+    }
+
+    .lf_coluna{
+        margin-bottom: 30px;
+    }
+    
+    .lf_linha{
+        justify-content: space-between;
+    }
 
 }
 
