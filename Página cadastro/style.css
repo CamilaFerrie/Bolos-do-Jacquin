@@ -301,12 +301,18 @@ form input[type=checkbox]{
 
 .list_produtos{
     background-color: var(--corsecundaria);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* padding: 50px; também funcionária como o padding-bottom*/
 }
 
 table{
     width: 100%;
     font-family: var(--font-family);
     text-transform: uppercase;
+    text-align: left;
+    border-collapse: collapse;
+    margin-bottom: 100px;
 }
 
 table svg{
@@ -322,8 +328,35 @@ thead{
 tbody{
     color: #aaaaaa;
     font-weight: 400;
+    border: #aaaaaa;
 }
 
+tr, td{
+    border-bottom: solid 1px;
+    padding: 5px 10px;
+}
+
+/* -----------RODAPÉ------------- */
+
+footer div{
+    background-color: #FFF4F4;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+footer nav a{
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
 
 
 
@@ -384,6 +417,79 @@ tbody{
         justify-content: space-between;
     }
 
+
+    /*------------------TABELA---------------*/
+    
+    thead{
+        display: none;
+    }
+
+    tbody tr{
+        display: flex;
+        flex-direction: column;
+        border: solid 1px #aaaaaa;
+        border-radius: 10px;
+        background-color: #ffffffff;
+        box-shadow: 0px 10px 5px;
+        max-width: 500px;
+        margin: 0 auto 50px;
+    }
+
+    tbody td{
+        border: none;
+    }
+
+    tbody td::before{
+        content:  attr(data-cell) ":";
+        font-size: 12px;
+        color: #444;
+        font-weight: 600;
+    }
+
+
+    footer div{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 15px;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+    }
+
+    footer div{
+        height: 130px;
+    }
+
+    footer img{
+        width: 100px;
+        margin-bottom: -60px;
+        margin-top: -50px;
+    }
+
+    footer span, 
+    nav{
+        font-size: 10px;
+        margin-bottom: -60px;
+        margin-top: -50px;
+    }
+
+    nav{
+        max-width: 20%;
+    }
+
+    .div-um {
+        order: 2; /* Vai para o segundo lugar no mobile */
+    }
+
+    .div-tres {
+        order: 1; /* Vai para o primeiro lugar no mobile */
+    }
+
+    .div-dois {
+        order: 3; /* Vai para o terceiro lugar no mobile */
+    }
 }
+
+
 
 
